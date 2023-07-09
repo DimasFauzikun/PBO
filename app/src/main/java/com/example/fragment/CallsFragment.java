@@ -50,8 +50,13 @@ public class CallsFragment extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         if (getArguments() != null) {
+<<<<<<< HEAD
             MParam1 = getArguments().getString(ARG_PARAM1);
             MParam2 = getArguments().getString(ARG_PARAM2);
+=======
+            mParam1 = getArguments().getString(ARG_PARAM1);
+            mParam2 = getArguments().getString(ARG_PARAM2);
+>>>>>>> 1f403d1 (Update Error)
         }
     }
 

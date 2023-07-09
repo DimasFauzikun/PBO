@@ -26,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
             public void onNavigationItemReselected(@NonNull MenuItem item) {
                Fragment selectedFragment = null;
 
+<<<<<<< HEAD
 
                 switch (item.getItemId()){
                     case R.id.nav_Chats:
@@ -38,6 +39,27 @@ public class MainActivity extends AppCompatActivity {
                         selectedFragment = new CallsFragment();
                         break;
                 }
+=======
+                int id = item.getItemId();
+                if (id == R.id.nav_Chats) {
+                    selectedFragment = new ChatsFragment();
+                } else if (id == R.id.nav_Status) {
+                    selectedFragment = new StatusFragment();
+                } else if (id == R.id.nav_Calls) {
+                    selectedFragment = new CallsFragment();
+                }
+//                switch (item.getItemId()){
+//                    case R.id.nav_Chats:
+//                        selectedFragment = new ChatsFragment();
+//                        break;
+//                    case R.id.nav_Status:
+//                        selectedFragment = new StatusFragment();
+//                        break;
+//                    case R.id.nav_Calls:
+//                        selectedFragment = new CallsFragment();
+//                        break;
+//                }
+>>>>>>> 1f403d1 (Update Error)
 
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, selectedFragment).commit();
 
